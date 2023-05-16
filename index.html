@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./style.css">
   <title>Read Theory</title>
 </head>
@@ -23,6 +24,9 @@
           <a href="#">Lesson Plans <img src="./img/Vector 12.png" alt="vektor"></a>
           <a href="#">Teacher's Lounge</a>
         </div>
+        <div class="hamburger">
+          <i class="fa-sharp fa-light fa fa-bars fa-2x fa-2xl" style="color: #FFFFFFFF;"></i>
+        </div>
         <div class="nav__buttons">
           <button class="btn__login">Login</button>
           <button class="btn__signup">Sign Up</button>
@@ -33,14 +37,16 @@
         <div class="main-content-1">
           <h1>ReadTheory is the <br> smart way to help <br> <span class="title__part">students read better</span></h1>
           <p>Our interactive exercises motivate <br> students of all levels to practice reading</p>
-          <button class="sign__up__btn">Sign up now for free</button>
+          <div class="sign__up__buttons">
+            <button class="sign__up__btn">Sign up now for free</button>
           <button class="intro__btn"><img src="./img/Polygon 1.png" alt="">Intro Video</button>
+          </div>
         </div>
         <img class="header__ilustration__photo" src="./img/Header illustration 1.png" alt="header-ilustration">
       </div>
 
       <div class="students__num">
-        <div>
+        <div class="students__num__child">
           <h3 class="students__title">Around the world, millions of students are benefiting from ReadTheory.</h3>
           <ul>
             <li>14,000,000 Students</li>
@@ -64,7 +70,8 @@
     </div>
   </header>
 
-  <section class="section-1 container">
+  <section class="section-1">
+    <div class="container">
     <h1>Why use ReadTheory?</h1>
     <div class="testimonials">
       <div>
@@ -89,14 +96,15 @@
           prizes.</p>
       </div>
     </div>
+    </div>
   </section>
 
   <!-- section-2 -->
   <section class="section-2">
     <div class="flex__row">
-      <img src="./img/section-2-images/Say icon 1.svg" alt="Say icon 1">
-      <h2 class="section__2__title">What educators say</h2>
-      <img src="./img/section-2-images/say icon 2.svg" alt="Say icon 2">
+      <img src="./img/section-2-images/Say icon 1.svg" alt="Say icon 1" class="say__icon__1">
+      <h2 class="section__2__title">What <br>educators say</h2>
+      <img src="./img/section-2-images/say icon 2.svg" alt="Say icon 2" class="say__icon__2">
     </div>
     <div class="group__1">
       <div class="oerlap__group">
@@ -137,7 +145,8 @@
   </section>
 
   <!-- section-3 -->
-  <section class="section-3 container">
+  <section class="section-3">
+    <div class="section-3-child container">
     <div class="section__3_group__1">
       <h1>Try it right now</h1>
       <p>Our initial test will allow you to see for yourself how students experience ReadTheory.</p>
@@ -186,10 +195,9 @@
           <p>A watermelon, which has a tough green shell.</p>
         </div>
       </div>
-
     </div>
+
     <div class="footer__section">
-      <div class="border"></div>
       <div class="first__child">
         <span></span>
         <span></span>
@@ -198,11 +206,18 @@
       <button class="footer__section__btn">Submit answer</button>
     </div>
   </div>
+
+  <div class="group__image">
+    <img  src="./img/Group 15189.png" alt="" width="311px" height="223px">
+    <button class="sign__up__btn">Start Test</button>
+  </div>
+    </div>
   </section>
 
   <!-- section 4 -->
-  <section class="section-4 container">
-    <img src="./img/section-5/500x504.png" alt="child" width="500px" height="504px">
+  <section class="section-4">
+    <div class="container">
+    <img class="kid" src="./img/section-5/500x504.png" alt="child" width="500px" height="504px">
     <div class="comp__offers">
       <h1>Enjoy what <br> ReadTheory has to offer</h1>
       <div class="offers">
@@ -243,6 +258,23 @@
           </div>
         </div>
       </div>
+
+      <div class="another__option">
+        <img src="./img/Group 14851.png" alt="">
+        <div class="text">
+          <h2>Adaptive software</h2>
+          <p>Our A.I driven software constantly notes students’ performance and adapts the level of difficulty of exercises accordingly. </p>
+          <div class="span__numbers">
+            <span class="num__1">1</span>
+            <span class="num__1">2</span>
+            <span class="num__1">3</span>
+            <span class="num__1">4</span>
+            <span class="num__1">5</span>
+            <span class="num__1">6</span>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   </section>
 
@@ -252,14 +284,14 @@
     <h1>Rooted in research, proven in results.</h1>
     <div class="datas container">
       <div class="data first__data">
-        <img src="./img/students-results/Test scores illustration 220x220.png" alt="test scores" width="220px" height="220px">
+        <img src="./img/students-results/Test scores illustration 220x220.png" alt="test scores" width="220px" height="220px" class="scores">
         <div>
           <p class="num_p">80%</p>
           <p class="info">of teachers surveyed reported that ReadTheory contributed to an increase in standardized test scores. </p>
         </div>
       </div>
         <div class="data second__data">
-          <img src="./img/students-results/students interested illustration 220x220.png" alt="students ilustrations">
+          <img src="./img/students-results/students interested illustration 220x220.png" alt="students ilustrations" class="scores">
           <div class="first__data__info">
             <p class="num_p">89%</p>
             <p class="info">of teachers said students are engaged and interested when using ReadTheory. </p>
@@ -272,7 +304,8 @@
   </section>
 
   <!-- section 6 -->
-  <section class="section-6 container">
+  <section class="section-6">
+    <div class="section-6-child container">
     <img src="./img/Footer Illustration.png" alt="ilustration" width="470px" height="448px">
     <div class="section__6__info">
       <h1>ReadTheory <br>
@@ -285,41 +318,97 @@
           <button class="sign__up__btn">Sign Up For Free</button>
         </div>
     </div>
+  </div>
   </section>
 
   <!-- footer  -->
-  <!-- <footer class="container">
-    <div class="footer__1">
-      <img src="./img/logo/logo (2).png" alt="logo">
-      <form>
-        <input type="email" placeholder="Your work email">
-        <button>See How It Just Works</button>
-      </form>
+  <footer>
+    <div class="footer-section container">
+      <div class="footer__col__1">
+        <img src="./img/logo/logo (2).png" alt="logo">
+        <form>
+          <input type="email" placeholder="Your work email">
+          <button>See How It just Works</button>
+        </form>
+      </div>
+
+      <div class="footer__col__2">
+        <div>
+          <h2>About Us</h2>
+          <ul class="none">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">ReadTheory History</a></li>
+            <li><a href="#">Meet Our Staff</a></li>
+            <li><a href="#">Meet Our Writers</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Support Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Lesson Plans</h2>
+          <ul class="none">
+            <li><a href="#">Central Idea</a></li>
+            <li><a href="#">Characterization</a></li>
+            <li><a href="#">Inferencing</a></li>
+            <li><a href="#">Point Of View</a></li>
+            <li><a href="#">Summarizing</a></li>
+            <li><a href="#">Theme</a></li>
+            <li><a href="#">Tone</a></li>
+            <li><a href="#">Vocab in Context</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__child__2">
+         <div>
+          <h2>Reading Comprehension Worksheets</h2>
+          <ul class="none">
+            <li><a href="#">1st grade</a></li>
+            <li><a href="#">2nd grade</a></li>
+            <li><a href="#">3rd grade</a></li>
+            <li><a href="#">4th grade</a></li>
+            <li><a href="#">5th grade</a></li>
+            <li><a href="#">6th grade</a></li>
+            <li><a href="#">7th grade</a></li>
+            <li><a href="#">8th grade</a></li>
+          </ul>
+         </div>
+         <div>
+          <ul class="none">
+            <li><a href="#">9th grade</a></li>
+            <li><a href="#">10th grade</a></li>
+            <li><a href="#">11th grade</a></li>
+            <li><a href="#">12th grade</a></li>
+            <li><a href="#">Adult (ABE)</a></li>
+            <li><a href="#">ESL</a></li>
+            <li><a href="#">Special education</a></li>
+          </ul>
+         </div>
+        </div>
+      
+        <div class="footer__child__3">
+          <h2>Reading Exercises</h2>
+          <h2>Teachers' Lounge</h2>
+        </div>
+        
+      </div>
+      
+    
+      <div class="footer__col__3">
+        <div class="col__3__firstChild">
+          <a href="#">2021, ReadTheory. All rights reserved</a>
+          <a href="#">FAQ</a>
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms of use</a>
+        </div>
+        <div class="col__3__secondChild">
+          <i class="fa-brands fa-facebook" style="color: #A7B2C1"></i>
+          <i class="fa-brands fa-twitter" style="color: #A7B2C1"></i>
+          <i class="fa-brands fa-youtube" style="color: #A7B2C1"></i>
+          <img src="./img/footer.png" alt="kids" width="91px" height="32px">
+        </div>
+      </div>
     </div>
-    <div class="footer__2">
-      <div>
-        <h3>About Us</h3>
-        <a href="#">About us</a>
-        <a href="#">ReadTheory History</a>
-        <a href="#">Meet Our Staff</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Support Us</a>
-      </div>
-      <div>
-        <h3>Lesson Plans</h3>
-        <a href="#">Central Idea</a>
-        <a href="#">Characterization</a>
-        <a href="#">Inferecing</a>
-        <a href="#">Point Of View</a>
-        <a href="#">Summarizing</a>
-        <a href="#">Theme</a>
-        <a href="#">Tone</a>
-        <a href="#">Vocob In Context</a>
-      </div>
-      <div>
-        <h3>Reading Comp</h3>
-      </div>
-    </div>
-  </footer> -->
+  </footer>
 </body>
 </html>
