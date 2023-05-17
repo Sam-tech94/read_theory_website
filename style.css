@@ -279,16 +279,18 @@ header {
   align-items: flex-end;
   align-self: flex-end;
   gap: 4px;
-  margin-top: 42px;
+  margin: 42px auto 0;
   min-height: 321px;
-  width: 802px;
+  max-width: 802px;
+  width: 100%;
 }
 
 .oerlap__group {
   height: 304px;
   margin-right: -6px;
   position: relative;
-  width: 808px;
+  max-width: 808px;
+  width: 100%;
 }
 
 .rectangle__32 {
@@ -296,13 +298,16 @@ header {
   left: 0;
   position: absolute;
   top: 47px;
-  width: 770px;
+  max-width: 770px;
+  width: 100%;
 }
 
 .rectangle__31 {
   position: absolute;
   top: 12px;
   left: 22px;
+  max-width: 770px;
+  width: 100%;
 }
 
 .rect__paragraph {
@@ -614,10 +619,11 @@ header {
 .section-4 {
   display: flex;
   justify-content: space-around;
-  gap: 170px;
   margin-top: 96px;
 }
-
+.sec-4 {
+  display: contents;
+}
 .comp__offers {
   margin-top: 25px;
 }
@@ -708,11 +714,11 @@ header {
 
 .section-5 {
   background-color: var(--secondary-bg-color);
-  height: 624px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  padding-bottom: 30px;
 }
 
 .datas {
@@ -935,6 +941,62 @@ footer {
   display: none;
 }
 
+@media(max-width:1260px) {
+  .container {
+    padding: 20px 75px;
+  }
+  .section-2 {
+    padding: 96px 20px !important;
+  }
+}
+@media(max-width:1024px) {
+  .section__3__overwrap,
+  .section-4,
+  .testimonials,
+  .datas, .main-content, .section-6-child, .footer__col__1, .footer__col__2  {
+    display: block;
+  }
+  .fruits {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .sort__of__fruits {
+    margin-right: 0;
+  }
+  .sort__of__fruits div  {
+    margin: 0 auto;
+  }
+  .sort__of__fruits h3 {
+    text-align: center;
+  }
+  .footer__section__btn {
+    right: 284px;
+  }
+  .section-1 h1,
+  .section-4,.testimonials, .main-content, .section-6-child {
+    text-align: center;  
+  }
+  .testimonials div {
+    margin-right: 0;
+    margin-top: 31px;
+  }
+  .section-5 h1 {
+    margin: 96px 0;
+  }
+  .main-content-1 {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .section__6__info p {
+    width: 100%;
+  }
+  .rect__paragraph {
+    width: unset;
+  }
+  .flex__row {
+    min-width: unset;
+} 
+}
 @media (max-width: 376px) {
   .container {
     max-width: 375px;
@@ -1155,10 +1217,6 @@ footer {
     line-height: 22.6px;
     text-align: center;
     margin-top: 64px;
-  }
-
-  .section-5 {
-    height: 954px;
   }
 
   .datas {
