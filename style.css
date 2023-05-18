@@ -1226,6 +1226,8 @@ footer {
   .span__numbers {
     display: flex;
     gap: 16px;
+    justify-content: center;
+    margin-bottom: 70px;
   }
 
   .scores {
