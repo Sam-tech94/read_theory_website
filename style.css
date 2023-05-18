@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 :root {
   --primary-bg-color: #132C55;
   --secondary-bg-color: #EEF5FF;
@@ -209,7 +213,6 @@ header {
   display: flex;
   flex-direction: column;
   margin-top: 133px;
-  gap: 64px;
 }
 
 .testimonials {
@@ -221,6 +224,7 @@ header {
   font-weight: 700;
   font-size: 36px;
   line-height: 43.2px;
+  margin-bottom: 64px;
 }
 
 .testimonials h3 {
@@ -254,7 +258,23 @@ header {
   padding: 96px 318px;
   min-height: 704px;
 }
-
+.white {
+  width: 100%;
+  background: white;
+  height: inherit;
+  border-radius: 30px 30px 30px 0;
+  z-index: 2;
+  position: absolute;
+}
+.yellow {
+  width: 100%;
+  height: inherit;
+  background-color: #FEEAA5;
+  border-radius: 30px 30px 30px 0;
+  position: absolute;
+  top: 25px;
+  left: -40px
+}
 .flex__row {
   display: flex;
   align-items: flex-start;
@@ -329,6 +349,7 @@ header {
   left: 78px;
   top: 0;
   width: 47px;
+  z-index: 2;
 }
 
 .group__2 {
@@ -340,6 +361,7 @@ header {
   position: absolute;
   top: 178px;
   left: 81px;
+  z-index: 2;
 }
 
 .group__2 img {
@@ -376,8 +398,9 @@ header {
   display: flex;
   align-items: flex-start;
   gap: 32px;
-  margin-top: 7px;
+  margin-top: 35px;
   min-width: 288px;
+  z-index: 2;
 }
 
 .group__3 img {
@@ -996,6 +1019,8 @@ footer {
   .flex__row {
     min-width: unset;
 } 
+
+
 }
 @media (max-width: 376px) {
   .container {
@@ -1121,25 +1146,32 @@ footer {
     min-width: 0px;
     margin-right: 0px;
     gap: 0px;
+    display: block;
   }
 
-  /* .group__1 {
-    width: 0px;
-    align-items: center;
+  .group__2 {
+    top: 228px;
+    left: 5px;
   }
 
-  .oerlap__group {
-    width: 679px;
+  .yellow {
+    left: -15px;
   }
 
-  .rectangle__32 {
-    width: 400px;
-    height: 500px;
+  .white {
+    right: 8px;
   }
 
-  .rectangle__31 {
-    width: 400px;
-  } */
+  .rect__paragraph {
+    font-size: 20px;
+    top: 30px;
+    left: 30px;
+  }
+
+  .quote__icon {
+    left: 20px;
+    top: -13px;
+  }
 
   .section__3_group__1 {
     margin-top: 50px;
@@ -1150,13 +1182,6 @@ footer {
     display: none;
   }
 
-  .group__image {
-    display: block;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    margin-bottom: 50px;
-  }
 
   .section-4 {
     margin-top: 0px;
@@ -1237,6 +1262,7 @@ footer {
   }
 
   .section-6-child {
+    display: flex;
     flex-direction: column-reverse;
   }
 
